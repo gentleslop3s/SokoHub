@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services Page</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+
+
 </head>
 <body>
-    <h1>Our Services</h1>
+    <h1 class="text-center text-decoration-underline">Our Services</h1>
+
+    <a href="{% url 'home' %}" class="btn btn-primary">Home</a>
+    <a href="{% url 'about' %}" class="btn btn-secondary">About</a>
+    <a href="{% url 'contact' %}" class="btn btn-success">Contact</a>
+
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente commodi mollitia tenetur fuga enim soluta corrupti, temporibus sequi laborum eveniet culpa praesentium minima in aliquid neque accusamus doloribus vel quibusdam!
     Iusto ipsam, nihil temporibus debitis itaque adipisci provident aliquid odit incidunt iste reiciendis doloribus cupiditate doloremque? Enim, quis, et natus obcaecati doloremque aut praesentium, vero alias dolorem possimus dolor cupiditate.
     Dolore soluta, ullam animi sit nobis praesentium aliquid consequatur quo eius dolor dicta quisquam deserunt sed optio nemo reiciendis quas autem iusto. Ea ducimus quis, id veniam assumenda soluta neque?</p>
 
-    <h2>Service Categories</h2>
+    <h2 class="text-danger mb-3">Service Categories</h2>
 
     <h3>Fast Delivery</h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor qui nisi iure beatae. Id, incidunt adipisci? Deserunt a, praesentium, laboriosam et, iure non aut quasi doloremque harum temporibus amet autem?
